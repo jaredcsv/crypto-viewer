@@ -2,7 +2,8 @@ function MenuBar() {
   return (
     <nav className="menu-bar">
       <div>
-        <img src="" alt="" />
+        <img src="/src/assets/img/wormcoins.png" alt="" />
+        <h2>WormCoins</h2>
       </div>
       <ul>
         <li>
