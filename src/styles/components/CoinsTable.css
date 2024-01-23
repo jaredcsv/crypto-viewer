@@ -1,0 +1,17 @@
+.table-title{
+    border: 1px solid;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.coin-logo{
+    width: 30px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.coins-table{
+    border: 1px solid;
+    margin: 0 auto;
+    padding: 20px;
+}

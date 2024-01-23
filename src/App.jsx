@@ -1,11 +1,11 @@
 import CoinsTable from "./components/CoinsTable";
 import "./App.css";
-import MenuBar from "./components/MenuBar";
+import MenuBarWide from "./components/MenuBar";
 
 function App() {
   return (
     <>
-      <MenuBar />
+      <MenuBarWide />
       <CoinsTable />
     </>
   );

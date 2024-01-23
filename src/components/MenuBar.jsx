@@ -1,23 +1,31 @@
-function MenuBar() {
+import "/src/styles/components/MenuBar.css";
+
+function MenuBarWide() {
   return (
     <nav className="menu-bar">
-      <div>
-        <img src="/src/assets/img/wormcoins.png" alt="" />
-        <h2>WormCoins</h2>
+      <div className="logo-container">
+        <img className="logo-img" src="/src/assets/img/wormcoins.png" alt="" />
+        <h2 className="logo-text">WormCoins</h2>
       </div>
-      <ul>
+      <ul className="menu-items">
         <li>
-          <a href="#">Home</a>
+          <a className="menu-item" href="#">
+            Home
+          </a>
         </li>
         <li>
-          <a href="#">Services</a>
+          <a className="menu-item" href="#">
+            Services
+          </a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a className="menu-item" href="#">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
   );
 }
 
-export default MenuBar;
+export default MenuBarWide;
