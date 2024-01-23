@@ -13,3 +13,13 @@ a {
 body {
   font-family: "Work Sans", sans-serif;
 }
+
+footer{
+  display: none;
+}
+
+/* desktop */
+
+.menu-bar{
+  display: none;
+}

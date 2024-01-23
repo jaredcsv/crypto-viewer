@@ -1,6 +1,6 @@
 import "/src/styles/components/MenuBar.css";
 
-function MenuBarWide() {
+function MenuBar() {
   return (
     <nav className="menu-bar">
       <div className="logo-container">
@@ -28,4 +28,4 @@ function MenuBarWide() {
   );
 }
 
-export default MenuBarWide;
+export default MenuBar;

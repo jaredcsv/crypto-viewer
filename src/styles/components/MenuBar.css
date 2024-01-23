@@ -1,41 +1,47 @@
-.menu-bar{
+@media (min-width: 768px) {
+  /*Burger Menu*/
+  .nav-container{
     display: none;
+  }
+
+  /*Wide Menu*/
+
+  .menu-bar {
+    display: flex;
     border: 1px solid;
     justify-content: space-between;
-}
+  }
 
-.menu-items{
+  .menu-items {
     border: 1px solid;
     display: flex;
     width: auto;
     align-items: center;
     justify-content: end;
-}
+  }
 
-.menu-item{
+  .menu-item {
     border: 1px solid;
     margin: 0 10px;
     width: 500px;
     padding: 10px 50px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-text {
+    display: none;
+    width: 500px;
+    padding: 10px;
+    font-family: "Lexend", sans-serif;
+  }
 }
-
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  width: 200px;
-}
-
-.logo-img {
-  width: 50px;
-  height: 50px;
-}
-
-.logo-text {
-  display: none;
-  width: 500px;
-  padding: 10px;
-  font-family: 'Lexend', sans-serif;
-}
-
-
