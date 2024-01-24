@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap&family=Lexend:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap&family=Lexend:wght@100,200,300,400,700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -18,11 +18,45 @@ a {
 body {
   background-color: #ecf0f1;
   color: #3f4143;
-  font-family: "Fragment Mono", monospace;
+  font-family: "Lexend", sans-serif;
 }
 
 footer {
-  margin: 50px auto 10px auto;
+  padding: 20px;
+  text-align: center;
 }
+
+footer div {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-media ul {
+  padding: 0;
+}
+
+.social-media ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333; /* Color del texto de los enlaces (puedes cambiarlo según tu preferencia) */
+}
+
+footer a:hover {
+  color: #8f9090;
+}
+
 
 /* desktop */

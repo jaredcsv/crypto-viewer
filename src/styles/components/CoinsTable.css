@@ -1,5 +1,4 @@
 .table-title {
-  font: 600 1.7rem "Lexend", sans-serif;
   text-align: left;
   margin: 20px;
 }
@@ -27,6 +26,7 @@
 
 .coins-table {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Fragment Mono", monospace;
   margin: 0 auto;
   padding: 20px;
   border-collapse: collapse;
@@ -36,6 +36,7 @@
 
 .coin-content_data {
   padding: 20px;
+  font-family: "Fragment Mono", monospace;
   border-top: 1px solid #ddd;
 }
 
