@@ -1,0 +1,6 @@
+.loading-screen {
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;    
+    width: 400px;
+}

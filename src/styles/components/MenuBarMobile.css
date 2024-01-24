@@ -113,7 +113,8 @@
   font-family: "Lexend", sans-serif;
   top: -5px;
   right: 15px;
-  font-size: .9rem;
+  font-size: 1rem;
+  color: red;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {

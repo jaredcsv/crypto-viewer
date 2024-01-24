@@ -10,8 +10,11 @@ function useFetch(url) {
 
   useEffect(() => {
     // Check for cached data first
-    if (cachedData.current) {
-      setData(cachedData.current);
+    const cachedDataString = localStorage.getItem(url);
+
+    if (cachedDataString) {
+      const cachedDataParsed = JSON.parse(cachedDataString);
+      setData(cachedDataParsed);
       setLoading(false);
       return;
     }
@@ -19,16 +22,23 @@ function useFetch(url) {
     setLoading(true);
     fetch(url)
       .then((response) => response.json())
-      .then((data) => {
+      .then((fetchedData) => {
         // Store the fetched data in cache
-        cachedData.current = data;
-        setData(data);
+        cachedData.current = fetchedData;
+        setData(fetchedData);
+        localStorage.setItem(url, JSON.stringify(fetchedData));
       })
       .catch((error) => setError(error))
       .finally(() => setLoading(false));
   }, [url]);
 
-  return { data, loading, error };
+
+  const isDataInCache = () => {
+    return !!cachedData.current; // Returns true if there is data in cache, false otherwise
+  };
+
+
+  return { data, loading, error, isDataInCache };
 }
 
 export default useFetch;
