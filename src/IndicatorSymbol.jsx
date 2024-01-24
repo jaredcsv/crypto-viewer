@@ -32,7 +32,6 @@ const IndicatorSymbol = ({ value }) => {
   return (
     <>
       {getIndicator()}
-      $
       {value}
     </>
   );
