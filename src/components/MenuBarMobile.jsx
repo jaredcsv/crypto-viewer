@@ -13,23 +13,17 @@ function MenuBarMobile() {
               <span className="line line3"></span>
             </div>
             <div className="logo">
-              <h1>Navbar</h1>
+              <h1>WormCoins</h1>
             </div>
             <div className="menu-items">
               <li>
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">about</a>
+                <a href="#">Services</a>
               </li>
               <li>
-                <a href="#">blogs</a>
-              </li>
-              <li>
-                <a href="#">portfolio</a>
-              </li>
-              <li>
-                <a href="#">contact</a>
+                <a href="#">Contact</a>
               </li>
             </div>
           </div>

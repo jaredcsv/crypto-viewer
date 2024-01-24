@@ -10,41 +10,49 @@ function CoinsTable() {
   return (
     <>
       <div className="">
-        <h1 className="table-title">Top 10 Cryptos</h1>
+        <h1 className="table-title">TOP 10 CRYPTOS</h1>
       </div>
       <div className="table-container">
-        {loading && <span>Loading...</span>}
+        {loading && <h1>Loading...</h1>}
         {data && (
           <table className="coins-table">
-            <thead>
+            <thead className="table-header">
               <tr>
-                <th>Rank</th>
-                <th>Coin Name</th>
-                <th>Symbol</th>
-                <th>Current</th>
-                <th>Last 24h</th>
-                <th>Market Cap %</th>
-                <th></th>
+                <th className="column-title">Rank</th>
+                <th className="column-title">Logo</th>
+                <th className="column-title">Name</th>
+                <th className="column-title">Symbol</th>
+                <th className="column-title">Current Price</th>
+                <th className="column-title">Last 24h</th>
+                <th className="column-title">Market Cap %</th>
               </tr>
             </thead>
             <tbody>
               {data.map((coin) => (
-                <tr key={coin.id}>
-                  <td>{coin.market_cap_rank}</td>
-                  <td className="coin-name">
-                    <img className="coin-logo" src={coin.image} alt="" />{" "}
-                    {coin.name}
+                <tr className="coin-row" key={coin.id}>
+                  <td className="coin-content_data">{coin.market_cap_rank}</td>
+                  <td className="coin-content_data">
+                    <img
+                      className="coin-logo"
+                      src={coin.image}
+                      alt={coin.name}
+                    />
+                  </td>
+                  <td className="coin-content_data coin-name">{coin.name}</td>
+
+                  <td className="coin-content_data">{coin.symbol}</td>
+                  <td className="coin-content_data">${coin.current_price}</td>
+
+                  <td className="coin-content_data">
+                    <IndicatorSymbol value={coin.price_change_24h.toFixed(2)} />
                   </td>
 
-                  <td>{coin.symbol}</td>
-                  <td>{coin.current_price}</td>
-
-                  <td>
-                    <IndicatorSymbol value={coin.price_change_24h} />
+                  <td className="coin-content_data">
+                    <IndicatorSymbol
+                      value={coin.market_cap_change_percentage_24h.toFixed(2)}
+                    />
+                    %
                   </td>
-
-                  <td><IndicatorSymbol value={coin.market_cap_change_percentage_24h}/></td>
-                  <td>{coin.last_updated}</td>
                 </tr>
               ))}
             </tbody>
