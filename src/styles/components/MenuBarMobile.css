@@ -29,7 +29,7 @@
   height: 100vh;
   margin-left: -60px;
   padding-left: 50px;
-  padding-bottom: 600px;
+  padding-top: 120px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
   background-color: #f6f6e9;
@@ -39,6 +39,7 @@
 .navbar .nav-container a {
   font-size: var(--font-size-large);
   color: #3f4143;
+  margin: 200px auto;
   transition: all 0.3s ease-in-out;
 }
 

@@ -5,9 +5,7 @@
 
 .menu-items {
   display: flex;
-  width: auto;
   align-items: center;
-  justify-content: end;
 }
 
 .menu-item {
