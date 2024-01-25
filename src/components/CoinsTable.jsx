@@ -17,12 +17,13 @@ function CoinsTable() {
 
   return (
     <>
-      <div className="">
-        <h1 className="table-title">Top 10 Cryptos</h1>
-      </div>
+      {loading && <LoadingScreen />}
+      {error && <h1>Error</h1>}
       <div className="table-container">
-        {loading && <LoadingScreen/>}
-        {error && <h1>Error</h1>}
+        <div className="">
+          <h1 className="table-title">Top 10 Cryptos</h1>
+        </div>
+
         {data && (
           <table className="coins-table">
             <thead className="table-header">
@@ -50,7 +51,9 @@ function CoinsTable() {
                   <td className="coin-content_data coin-name">{coin.name}</td>
 
                   <td className="coin-content_data">{coin.symbol}</td>
-                  <td className="coin-content_data">${coin.current_price.toLocaleString()}</td>
+                  <td className="coin-content_data">
+                    ${coin.current_price.toLocaleString()}
+                  </td>
 
                   <td className="coin-content_data">
                     <IndicatorSymbol value={coin.price_change_24h.toFixed(2)} />
