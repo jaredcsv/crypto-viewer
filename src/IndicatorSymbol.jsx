@@ -38,7 +38,7 @@ const IndicatorSymbol = ({ value }) => {
 };
 
 IndicatorSymbol.propTypes = {
-  value: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 export default IndicatorSymbol;
