@@ -33,12 +33,15 @@
 
 .navbar .nav-container a {
   text-decoration: none;
+  font-size: var(--font-size-large);
   color: #3f4143;
   padding: 0.7rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar .nav-container a:hover {
-  font-size: 2rem;
+  font-size: var(--font-size-xlarge);
+  color: var(--secondary-text-color);
 }
 
 .nav-container {
