@@ -13,7 +13,7 @@ function MenuBarMobile() {
               <span className="line line3"></span>
             </div>
             <div className="logo">
-              <h1>WormCoins</h1>
+              <img className="logo-img-mobile" src="/src/assets/img/wormcoins-logo.png" alt="" />
             </div>
             <div className="menu-items">
               <li>

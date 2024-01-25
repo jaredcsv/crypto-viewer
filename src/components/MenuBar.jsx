@@ -4,8 +4,8 @@ function MenuBar() {
   return (
     <nav className="menu-bar">
       <div className="logo-container">
-        <img className="logo-img" src="/src/assets/img/wormcoins.png" alt="" />
-        <h2 className="logo-text">WormCoins</h2>
+        <img className="logo-img" src="/src/assets/img/wormcoins-logo-wide.png" alt="" />
+        <h2 className="logo-text"></h2>
       </div>
       <ul className="menu-items">
         <li>
