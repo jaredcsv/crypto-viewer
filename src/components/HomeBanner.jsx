@@ -2,7 +2,7 @@ import "/src/styles/components/HomeBanner.css"
 
 function HomeBanner() {
   return (
-    <section>
+    <section className="home-banner">
         <div className="home-banner-title_container">
         <h3>Welcome to WormCoins</h3>
         <p>Your Hub for Crypto Insights!</p>

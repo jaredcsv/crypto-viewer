@@ -1,19 +1,23 @@
+.home-banner {
+  padding: 20px;
+}
+
 .home-banner-title_container {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 20px;
+  padding: -100px;
 }
 
 .home-banner-title_container h3 {
-    font-size: 1.6rem;
-    color: var(--primary-text-color);
+  font-size: 1.6rem;
+  color: var(--primary-text-color);
 }
 
 .home-banner-title_container p {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
 }
 
 .home-banner_img {
@@ -23,9 +27,9 @@
 }
 
 .home-banner_description {
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 20px;
-    color: var(--secondary-text-color);
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 20px;
+  color: var(--secondary-text-color);
 }

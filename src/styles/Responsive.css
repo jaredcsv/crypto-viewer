@@ -1,0 +1,60 @@
+/* Pantallas más pequeñas (810px o menos) */
+@media screen and (max-width: 810px) {
+  .nav-container {
+    display: block;
+  }
+
+  .menu-bar {
+    display: none;
+  }
+}
+
+/* Pantallas más grandes (más de 810px) */
+@media screen and (min-width: 811px) {
+  .nav-container {
+    display: none;
+  }
+
+  .menu-bar {
+    display: flex;
+  }
+
+  .home-banner-title_container h3 {
+    font-size: 3.5rem;
+  }
+
+  .home-banner-title_container p {
+    font-size: 1.5rem;
+  }
+
+  .home-banner-img_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .home-banner_img {
+    width: 400px;
+  }
+
+  .home-banner_description {
+    font-size: var(--font-size-large);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .home-banner-img_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .home-banner_img {
+    width: 500px;
+  }
+
+
+  .footer {
+    margin-top: 100px;
+  }
+}

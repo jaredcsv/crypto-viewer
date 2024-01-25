@@ -18,6 +18,8 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 ul, li, a {
@@ -31,6 +33,7 @@ body {
   color: var(--primary-text-color);
   font-family: var(--main-font-family);
   font-size: var(--font-size-medium);
+  padding: 20px;
 }
 
 .footer {
@@ -91,9 +94,3 @@ body {
   font-size: .9rem;
   color: var(--accent-color-1);
 }
-
-
-
-
-
-/* desktop */
