@@ -28,7 +28,6 @@
 }
 
 .coins-table {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   font-family: var(--secondary-font-family);
   margin: 0 auto;
   padding: 20px;

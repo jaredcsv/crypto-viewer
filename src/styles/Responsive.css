@@ -40,6 +40,11 @@
     font-size: var(--font-size-large);
   }
 
+  .coins-table {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .coin-logo {
     width: 40px;
   }
