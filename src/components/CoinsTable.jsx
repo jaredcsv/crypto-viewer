@@ -5,7 +5,7 @@ import "/src/styles/components/CoinsTable.css";
 import LoadingScreen from "./LoadingScreen";
 
 function CoinsTable() {
-  const { data, loading, isDataInCache } = useFetch(
+  const { data, loading, error, isDataInCache } = useFetch(
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10"
   );
 
@@ -22,6 +22,7 @@ function CoinsTable() {
       </div>
       <div className="table-container">
         {loading && <LoadingScreen/>}
+        {error && <h1>Error</h1>}
         {data && (
           <table className="coins-table">
             <thead className="table-header">
@@ -49,7 +50,7 @@ function CoinsTable() {
                   <td className="coin-content_data coin-name">{coin.name}</td>
 
                   <td className="coin-content_data">{coin.symbol}</td>
-                  <td className="coin-content_data">${coin.current_price}</td>
+                  <td className="coin-content_data">${coin.current_price.toLocaleString()}</td>
 
                   <td className="coin-content_data">
                     <IndicatorSymbol value={coin.price_change_24h.toFixed(2)} />
