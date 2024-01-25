@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <MenuBarMobile />
-      <HomeBanner />
       <MenuBar />
+      <HomeBanner />
       <CoinsTable />
     </>
   );

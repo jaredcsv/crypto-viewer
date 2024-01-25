@@ -1,0 +1,28 @@
+.home-banner-title_container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-banner-title_container h3 {
+    font-size: 1.6rem;
+}
+
+.home-banner-title_container p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.home-banner_img {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.home-banner_description {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 20px;
+}

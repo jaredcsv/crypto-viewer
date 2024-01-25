@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap&family=Lexend:wght@100,200,300,400,700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap");
 
 * {
   box-sizing: border-box;
@@ -18,7 +18,7 @@ a {
 body {
   background-color: #ecf0f1;
   color: #3f4143;
-  font-family: "Lexend", sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 footer {
