@@ -1,14 +1,18 @@
-import "/src/styles/components/HomeBanner.css"
+import "/src/styles/components/HomeBanner.css";
 
 function HomeBanner() {
   return (
     <section className="home-banner">
-        <div className="home-banner-title_container">
+      <div className="home-banner-title_container">
         <h3>Welcome to WormCoins</h3>
         <p>Your Hub for Crypto Insights!</p>
-        </div>
+      </div>
       <div className="home-banner-img_container">
-        <img className="home-banner_img" src="/src/assets/animations/home-anim.gif" alt="" />
+        <img
+          className="home-banner_img"
+          src="/src/assets/animations/home-anim.gif"
+          alt=""
+        />
         <p className="home-banner_description">
           Discover the latest crypto news and real-time market stats with us.
           Stay informed, make smarter decisions, and navigate the exciting world
