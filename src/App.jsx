@@ -3,6 +3,7 @@ import MenuBar from "./components/MenuBar";
 import MenuBarMobile from "./components/MenuBarMobile";
 import "./App.css";
 import HomeBanner from "./components/HomeBanner";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <MenuBar />
       <HomeBanner />
       <CoinsTable />
+      <Footer/>
     </>
   );
 }
