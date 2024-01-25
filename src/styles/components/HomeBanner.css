@@ -7,11 +7,13 @@
 
 .home-banner-title_container h3 {
     font-size: 1.6rem;
+    color: var(--primary-text-color);
 }
 
 .home-banner-title_container p {
     font-size: 1rem;
     font-weight: 600;
+    color: var(--primary-text-color);
 }
 
 .home-banner_img {
@@ -25,4 +27,5 @@
     font-size: 1rem;
     font-weight: 400;
     padding: 20px;
+    color: var(--secondary-text-color);
 }
