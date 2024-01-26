@@ -1,30 +1,22 @@
 import IndicatorSymbol from "../IndicatorSymbol";
 import useFetch from "../useFetch";
-import { useEffect } from "react";
 import "/src/styles/components/CoinsTable.css";
 import LoadingScreen from "./LoadingScreen";
 
 function CoinsTable() {
-  const { data, loading, error, isDataInCache } = useFetch(
+  const { data, loading, error } = useFetch(
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10"
   );
-
-  useEffect(() => {
-    if (isDataInCache()) {
-      console.log("Data is available in cache");
-    }
-  }, [data, isDataInCache]);
 
   return (
     <>
       {loading && <LoadingScreen />}
-      {error && <h1>Error</h1>}
-      <div className="table-container">
-        <div className="">
-          <h1 className="table-title">Top 10 Cryptos</h1>
-        </div>
-
-        {data && (
+      {error && <h1>Error: {error} </h1>}
+      {data && data.length > 0 && (
+        <div className="table-container">
+          <div className="">
+            <h1 className="table-title">Top 10 Cryptos</h1>
+          </div>
           <table className="coins-table">
             <thead className="table-header">
               <tr>
@@ -69,8 +61,8 @@ function CoinsTable() {
               ))}
             </tbody>
           </table>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 }

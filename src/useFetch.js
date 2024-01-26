@@ -1,44 +1,37 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 function useFetch(url) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Use a ref to store cached data
-  const cachedData = useRef(null);
-
   useEffect(() => {
-    // Check for cached data first
-    const cachedDataString = localStorage.getItem(url);
-
-    if (cachedDataString) {
-      const cachedDataParsed = JSON.parse(cachedDataString);
-      setData(cachedDataParsed);
-      setLoading(false);
-      return;
-    }
 
     setLoading(true);
+
     fetch(url)
-      .then((response) => response.json())
-      .then((fetchedData) => {
-        // Store the fetched data in cache
-        cachedData.current = fetchedData;
-        setData(fetchedData);
-        localStorage.setItem(url, JSON.stringify(fetchedData));
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`API Call error: ${response.status}`);
+        }
+        return response.json();
       })
-      .catch((error) => setError(error))
+
+      .then((fetchedData) => {
+        if (!fetchedData) {
+          throw new Error("Empty API call");
+        }
+
+        setData(fetchedData);
+      })
+      .catch((error) => {
+        console.error("Error during API call:", error);
+        setError("Error during API call. See console for details.");
+      })
       .finally(() => setLoading(false));
   }, [url]);
 
-
-  const isDataInCache = () => {
-    return !!cachedData.current; // Returns true if there is data in cache, false otherwise
-  };
-
-
-  return { data, loading, error, isDataInCache };
+  return { data, loading, error };
 }
 
 export default useFetch;
