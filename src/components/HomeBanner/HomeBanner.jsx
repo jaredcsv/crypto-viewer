@@ -1,4 +1,5 @@
 import "./HomeBanner.css";
+import homeanimation from "/src/assets/animations/home-anim.gif"
 
 function HomeBanner() {
   return (
@@ -10,7 +11,7 @@ function HomeBanner() {
       <div className="home-banner-img_container">
         <img
           className="home-banner_img"
-          src="/assets/animations/home-anim.gif"
+          src={homeanimation}
           alt=""
         />
         <p className="home-banner_description">
