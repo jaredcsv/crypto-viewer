@@ -17,7 +17,7 @@
 .table-header {
   height: 50px;
   font-size: 0.9rem;
-  text-align: right;
+  text-align: left;
   font-family: var(--main-font-family);
 }
 
@@ -33,10 +33,11 @@
   padding: 20px;
   border-collapse: collapse;
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
 .coin-content_data {
-  padding: 20px;
+  white-space: nowrap;
+  padding: 15px;
   border-top: 1px solid #ddd;
 }
