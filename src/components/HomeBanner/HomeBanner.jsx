@@ -10,7 +10,7 @@ function HomeBanner() {
       <div className="home-banner-img_container">
         <img
           className="home-banner_img"
-          src="/src/assets/animations/home-anim.gif"
+          src="/assets/animations/home-anim.gif"
           alt=""
         />
         <p className="home-banner_description">
