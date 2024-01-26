@@ -1,4 +1,5 @@
 import "./Footer.css";
+import devlogo from "/src/assets/img/jmz_logo.png";
 
 function Footer() {
   return (
@@ -39,7 +40,7 @@ function Footer() {
       </div>
 
       <div className="footer-info">
-        <img className="dev-logo" src="/assets/img/jmz_logo.png" alt="" />
+        <img className="dev-logo" src={devlogo} alt="" />
         <p className="footer-text">Built by Jared Martinez 2024</p>
       </div>
 
@@ -51,7 +52,9 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
-            ><i className="fa-brands fa-medium"></i></a>
+            >
+              <i className="fa-brands fa-medium"></i>
+            </a>
           </li>
           <li className="social-media-item">
             <a
@@ -59,7 +62,9 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
-            ><i className="fa-brands fa-linkedin-in"></i></a>
+            >
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
           </li>
           <li className="social-media-item">
             <a
@@ -67,7 +72,9 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
-            ><i className="fa-brands fa-github"></i></a>
+            >
+              <i className="fa-brands fa-github"></i>
+            </a>
           </li>
           <li className="social-media-item">
             <a
@@ -75,7 +82,9 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
-            ><i className="fa-brands fa-salesforce"></i></a>
+            >
+              <i className="fa-brands fa-salesforce"></i>
+            </a>
           </li>
         </ul>
       </div>

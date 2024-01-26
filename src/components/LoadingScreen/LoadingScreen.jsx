@@ -1,10 +1,11 @@
 import "./LoadingScreen.css"
+import loadinganim from "/src/assets/animations/loading-screen.gif";
 
 function LoadingScreen() {
   return (
     <>
       <div className="loading-screen_container">
-          <img className="loading-screen" src="/src/assets/animations/loading-screen.gif" alt="" />
+          <img className="loading-screen" src={loadinganim} alt="" />
       </div>
     </>
   );

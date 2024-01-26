@@ -1,4 +1,5 @@
 import "./MenuBarMobile.css";
+import mobilelogo from "/src/assets/img/wormcoins-logo.png";
 
 function MenuBarMobile() {
   return (
@@ -13,7 +14,7 @@ function MenuBarMobile() {
           <span className="line line3"></span>
         </div>
         <div className="logo">
-          <img className="logo-img-mobile" src="/src/assets/img/wormcoins-logo.png" alt="" />
+          <img className="logo-img-mobile" src={mobilelogo} alt="" />
         </div>
         <ul className="menu-items">
           <li>
