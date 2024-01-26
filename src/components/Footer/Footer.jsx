@@ -39,7 +39,7 @@ function Footer() {
       </div>
 
       <div className="footer-info">
-        <img className="dev-logo" src="src/assets/img/jmz_logo.png" alt="" />
+        <img className="dev-logo" src="./src/assets/img/jmz_logo.png" alt="" />
         <p className="footer-text">Built by Jared Martinez 2024</p>
       </div>
 
