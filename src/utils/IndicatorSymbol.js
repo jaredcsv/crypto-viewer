@@ -26,7 +26,7 @@ const IndicatorSymbol = ({ value }) => {
           <polygon points="0,24 12,2 24,24" />
         </svg>
       );
-    }
+    }    
   };
 
   return (

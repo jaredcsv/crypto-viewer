@@ -1,4 +1,4 @@
-import "/src/styles/components/HomeBanner.css";
+import "./HomeBanner.css";
 
 function HomeBanner() {
   return (

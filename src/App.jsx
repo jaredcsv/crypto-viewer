@@ -1,9 +1,8 @@
-import CoinsTable from "./components/CoinsTable";
-import MenuBar from "./components/MenuBar";
-import MenuBarMobile from "./components/MenuBarMobile";
-import HomeBanner from "./components/HomeBanner";
-import Footer from "./components/Footer";
-import "./App.css";
+import CoinsTable from "./components/CoinsTable/CoinsTable";
+import MenuBar from "./components/MenuBar/MenuBar";
+import MenuBarMobile from "./components/MenuBarMobile/MenuBarMobile";
+import HomeBanner from "./components/HomeBanner/HomeBanner";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (

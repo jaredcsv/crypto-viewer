@@ -1,4 +1,4 @@
-import "/src/styles/components/MenuBarMobile.css";
+import "./MenuBarMobile.css";
 
 function MenuBarMobile() {
   return (

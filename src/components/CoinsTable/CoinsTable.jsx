@@ -1,8 +1,9 @@
-import IndicatorSymbol from "../IndicatorSymbol";
-import useFetch from "../useFetch";
-import "/src/styles/components/CoinsTable.css";
-import LoadingScreen from "./LoadingScreen";
-import ErrorScreen from "./ErrorScreen";
+import useFetch from "/src/utils/useFetch.js";
+import IndicatorSymbol from "/src/utils/IndicatorSymbol";
+import LoadingScreen from "../LoadingScreen/LoadingScreen";
+import ErrorScreen from "../ErrorScreen/ErrorScreen";
+import "./CoinsTable.css";
+
 
 function CoinsTable() {
   const { data, loading, error } = useFetch(

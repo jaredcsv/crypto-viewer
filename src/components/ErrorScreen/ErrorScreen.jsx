@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "/src/styles/components/ErrorScreen.css"
+import "./ErrorScreen.css"
 
 function ErrorScreen({ value }) {
   return (
