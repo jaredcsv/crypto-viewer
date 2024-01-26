@@ -1,5 +1,7 @@
 .error-container {
     display: flex;
+    height: 300px;
+    margin: 10px 0 10px 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -11,18 +13,18 @@
   }
   
   .error-title {
-    font-size: 3rem;
+    font-size: var(--font-size-xlarge);
     margin-bottom: 10px;
   }
   
   .error-message {
-    font-size: 2rem;
+    font-size: var(--font-size-large);
     margin-bottom: 10px;
-    color: red; /* Cambia el color según tu preferencia */
+    color: red;
   }
   
   .error-details {
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
     color: var(--secondary-text-color); /* Color de texto más claro para detalles */
   }
   
