@@ -26,7 +26,7 @@ function useFetch(url) {
       })
       .catch((error) => {
         console.error("Error during API call:", error);
-        setError("Error during API call. See console for details.");
+        setError("Error during API call");
       })
       .finally(() => setLoading(false));
   }, [url]);

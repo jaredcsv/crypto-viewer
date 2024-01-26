@@ -2,6 +2,7 @@ import IndicatorSymbol from "../IndicatorSymbol";
 import useFetch from "../useFetch";
 import "/src/styles/components/CoinsTable.css";
 import LoadingScreen from "./LoadingScreen";
+import ErrorScreen from "./ErrorScreen";
 
 function CoinsTable() {
   const { data, loading, error } = useFetch(
@@ -11,7 +12,7 @@ function CoinsTable() {
   return (
     <>
       {loading && <LoadingScreen />}
-      {error && <h1>Error: {error} </h1>}
+      {error && <ErrorScreen value={error}/>}
       {data && data.length > 0 && (
         <div className="table-container">
           <div className="">
