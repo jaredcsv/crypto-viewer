@@ -32,7 +32,7 @@ function Footer() {
               rel="noreferrer"
               className="footer-link"
             >
-              Crypto API from CoinGecko
+              Powered by CoinGecko
             </a>
           </li>
         </ul>
