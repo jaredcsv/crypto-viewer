@@ -71,11 +71,11 @@ function Footer() {
           </li>
           <li className="social-media-item">
             <a
-              href="#"
+              href="https://www.salesforce.com/trailblazer/jaredcv04"
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
-            ><i className="fa-brands fa-x-twitter"></i></a>
+            ><i className="fa-brands fa-salesforce"></i></a>
           </li>
         </ul>
       </div>
