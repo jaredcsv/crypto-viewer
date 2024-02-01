@@ -1,5 +1,5 @@
 import "./Footer.css";
-import devlogo from "/src/assets/img/jmz_logo.svg";
+import devlogo from "/src/assets/img/jmz_logo.png";
 
 function Footer() {
   return (
