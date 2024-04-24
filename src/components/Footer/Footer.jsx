@@ -48,7 +48,7 @@ function Footer() {
         <ul className="social-media-list">
           <li className="social-media-item">
             <a
-              href="https://medium.com/@jaredcv04"
+              href="https://medium.com/@jaredcsv"
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
@@ -58,7 +58,7 @@ function Footer() {
           </li>
           <li className="social-media-item">
             <a
-              href="https://www.linkedin.com/in/jaredcv04/"
+              href="https://www.linkedin.com/in/jaredcsv/"
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
@@ -68,7 +68,7 @@ function Footer() {
           </li>
           <li className="social-media-item">
             <a
-              href="https://github.com/jaredmz"
+              href="https://github.com/jaredcsv"
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
@@ -78,7 +78,7 @@ function Footer() {
           </li>
           <li className="social-media-item">
             <a
-              href="https://www.salesforce.com/trailblazer/jaredcv04"
+              href="https://www.salesforce.com/trailblazer/jaredcsv"
               target="_blank"
               rel="noreferrer"
               className="social-media-link"
